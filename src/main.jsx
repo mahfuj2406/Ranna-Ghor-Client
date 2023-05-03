@@ -11,6 +11,7 @@ import Login from './components/Login/Login';
 import Home from './components/Home/Home';
 import Register from './components/Register/Register';
 import AuthProviders from './providers/AuthProviders';
+import Recipe from './components/Recipe/Recipe';
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: '/register',
         element: <Register></Register>
+      },
+      {
+        path: '/recipe',
+        element: <Recipe></Recipe>
       }
     ]
   },
