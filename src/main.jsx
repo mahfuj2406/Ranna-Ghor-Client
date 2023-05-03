@@ -12,6 +12,7 @@ import Home from './components/Home/Home';
 import Register from './components/Register/Register';
 import AuthProviders from './providers/AuthProviders';
 import Recipe from './components/Recipe/Recipe';
+import PrivateRoute from './routes/PrivateRoute';
 
 const router = createBrowserRouter([
   {
@@ -32,7 +33,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/recipe',
-        element: <Recipe></Recipe>
+        element: <PrivateRoute><Recipe></Recipe></PrivateRoute>
       }
     ]
   },
