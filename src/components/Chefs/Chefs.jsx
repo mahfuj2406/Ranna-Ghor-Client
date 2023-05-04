@@ -14,7 +14,7 @@ const Chefs = (props) => {
                     <p><ArrowSmallRightIcon className="h-6 w-6 text-blue-500 inline" /> Total <strong className='text-green-500'>{num_recipes}</strong> recipes</p>
                     <div className="card-actions items-center justify-around">
                         <span><HandThumbUpIcon className="h-6 w-6 text-blue-500 inline" />{likes}</span>
-                        <Link to='/recipe' className="btn btn-primary px-2 text-xs">View recipe</Link>
+                        <Link to={`/recipe/${id}`} className="btn btn-primary px-2 text-xs">View recipe</Link>
                     </div>
                 </div>
             </div>
