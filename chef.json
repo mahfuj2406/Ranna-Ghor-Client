@@ -1,147 +1,147 @@
 [
-    {
-      "id": 1,
-      "name": "Sara Lee",
-      "picture_url": "https://example.com/sara-lee.jpg",
-      "short_bio": "Pastry chef with a flair for creating unique and delicious desserts.",
-      "years_of_experience": 10,
-      "likes": 2500,
-      "num_recipes": 50,
-      "recipes": [
-        {
-            "recipeId": "2374820398",
-            "recipeName": "Chocolate Lava Cake",
-            "ingredients": [
-              "1/2 cup unsalted butter",
-              "8 ounces bittersweet chocolate",
-              "3 large eggs",
-              "3 large egg yolks",
-              "1/4 cup granulated sugar",
-              "1/4 cup all-purpose flour"
-            ],
-            "method_of_cooking": "1. Preheat oven to 425 degrees F. Grease 6 ramekins with butter and dust with cocoa powder. \n2. In a double boiler, melt the butter and chocolate together. \n3. In a separate bowl, whisk together the eggs, egg yolks, and sugar until well combined. \n4. Slowly add the melted chocolate mixture to the egg mixture and whisk until well combined. \n5. Add the flour and mix until just combined. \n6. Pour the batter evenly into the prepared ramekins. \n7. Bake for 12-14 minutes, until the edges are set and the center is soft. \n8. Let cool for 1-2 minutes, then invert onto plates and serve immediately.",
-            "ratings": 4.5
-          },
-          {
-            "recipeId": "8593743290",
-            "recipeName": "Butter Chicken",
-            "ingredients": [
-              "1 lb boneless chicken",
-              "1/2 cup plain yogurt",
-              "2 tbsp ginger garlic paste",
-              "2 tbsp vegetable oil",
-              "1 tbsp garam masala",
-              "1/2 tbsp turmeric powder"
-            ],
-            "method_of_cooking": "1. Cut the chicken into bite-sized pieces and marinate in yogurt and ginger garlic paste for at least 30 minutes. \n2. Heat the oil in a pan and add the marinated chicken. Cook until lightly browned. \n3. Add garam masala, turmeric powder, and salt to taste. Cook for a few more minutes. \n4. Serve hot with naan or rice.",
-            "ratings": 4.8
-          },
-          {
-            "recipeId": "4829347491",
-            "recipeName": "Taco Salad",
-            "ingredients": [
-              "1 lb ground beef",
-              "1 can black beans",
-              "1 cup shredded cheddar cheese",
-              "1 cup salsa",
-              "1 head lettuce",
-              "1/2 cup sour cream"
-            ],
-            "method_of_cooking": "1. Brown the ground beef in a pan. \n2. Drain the excess fat and add the black beans. \n3. Simmer for a few minutes. \n4. In a large bowl, mix together the lettuce, cheese, and salsa. \n5. Add the beef and bean mixture to the bowl and mix well. \n6. Serve with a dollop of sour cream on top.",
-            "ratings": 4.2
-          }
-      ]
-    },
-    {
-      "id": 2,
-      "name": "Rajesh Patel",
-      "picture_url": "https://example.com/rajesh-patel.jpg",
-      "short_bio": "Indian cuisine expert with a focus on regional dishes and spice blends.",
-      "years_of_experience": 20,
-      "likes": 7500,
-      "num_recipes": 150,
-      "recipes": [
-        {
-            "recipeId": "3847583920",
-            "recipeName": "Grilled Cheese Sandwich",
-            "ingredients": [
-            "2 slices bread",
-            "2 slices cheddar cheese",
-            "1 tbsp butter"
-            ],
-            "method_of_cooking": "1. Heat a pan over medium heat. \n2. Butter one side of each slice of bread. \n3. Place one slice of bread in the pan, butter side down. \n4. Add the cheese slices on top of the bread. \n5. Place the other slice of bread on top, butter side up. \n6. Cook until the bottom slice of bread is golden brown. \n7. Flip the sandwich over and cook until the other side is golden brown. \n8. Serve hot.",
-            "ratings": 4.0
-            },
-            {
-            "recipeId": "2948374938",
-            "recipeName": "Pesto Pasta",
-            "ingredients": [
-            "1 lb pasta",
-            "2 cups fresh basil leaves",
-            "1/2 cup grated Parmesan cheese",
-            "1/2 cup olive oil",
-            "1/4 cup pine nuts",
-            "3 cloves garlic"
-            ],
-            "method_of_cooking": "1. Cook the pasta according to package instructions. \n2. While the pasta is cooking, make the pesto. \n3. In a food processor, combine the basil leaves, Parmesan cheese, olive oil, pine nuts, and garlic. \n4. Process until smooth. \n5. Drain the cooked pasta and return it to the pot. \n6. Add the pesto to the pot and mix well. \n7. Serve hot.",
-            "ratings": 4.4
-            }
-      ]
-    },
-    {
-      "id": 3,
-      "name": "Maria Rodriguez",
-      "picture_url": "https://example.com/maria-rodriguez.jpg",
-      "short_bio": "Mexican chef specializing in traditional and contemporary dishes.",
-      "years_of_experience": 8,
-      "likes": 3500,
-      "num_recipes": 75,
-      "recipes": [
-        "3409573498",
-        "5840395740",
-        "0234859048"
-      ]
-    },
-    {
-      "id": 4,
-      "name": "Chen Wu",
-      "picture_url": "https://example.com/chen-wu.jpg",
-      "short_bio": "Chinese cuisine expert with a focus on Szechuan and Hunan styles.",
-      "years_of_experience": 12,
-      "likes": 6000,
-      "num_recipes": 120,
-      "recipes": [
-        "9283740293",
-        "3049857402",
-        "5937489023"
-      ]
-    },
-    {
-      "id": 5,
-      "name": "Mario Rossi",
-      "picture_url": "https://example.com/mario-rossi.jpg",
-      "short_bio": "Italian chef with a passion for fresh, local ingredients and simple, rustic dishes.",
-      "years_of_experience": 18,
-      "likes": 9000,
-      "num_recipes": 200,
-      "recipes": [
-        "3402957402",
-        "0945837485",
-        "5983749583"
-      ]
-    },
-    {
-      "id": 6,
-      "name": "Jasmine Kim",
-      "picture_url": "https://example.com/jasmine-kim.jpg",
-      "short_bio": "Korean chef with a focus on traditional and fusion dishes, blending flavors from around the world.",
-      "years_of_experience": 6,
-      "likes": 2000,
-      "num_recipes": 50,
-      "recipes": [
-        "3049582038",
-        "5903485720",
-        "2348590384"
-      ]
-    }
-  ]
+  {
+    "id": 1,
+    "name": "Sara Lee",
+    "picture_url": "https://example.com/sara-lee.jpg",
+    "short_bio": "Pastry chef with a flair for creating unique and delicious desserts.",
+    "years_of_experience": 10,
+    "likes": 250,
+    "num_recipes": 50,
+    "recipes": [
+      {
+        "recipeId": "2374820398",
+        "recipeName": "Chocolate Lava Cake",
+        "ingredients": [
+          "1/2 cup unsalted butter",
+          "8 ounces bittersweet chocolate",
+          "3 large eggs",
+          "3 large egg yolks",
+          "1/4 cup granulated sugar",
+          "1/4 cup all-purpose flour"
+        ],
+        "method_of_cooking": "1. Preheat oven to 425 degrees F. Grease 6 ramekins with butter and dust with cocoa powder. \n2. In a double boiler, melt the butter and chocolate together. \n3. In a separate bowl, whisk together the eggs, egg yolks, and sugar until well combined. \n4. Slowly add the melted chocolate mixture to the egg mixture and whisk until well combined. \n5. Add the flour and mix until just combined. \n6. Pour the batter evenly into the prepared ramekins. \n7. Bake for 12-14 minutes, until the edges are set and the center is soft. \n8. Let cool for 1-2 minutes, then invert onto plates and serve immediately.",
+        "ratings": 4.5
+      },
+      {
+        "recipeId": "8593743290",
+        "recipeName": "Butter Chicken",
+        "ingredients": [
+          "1 lb boneless chicken",
+          "1/2 cup plain yogurt",
+          "2 tbsp ginger garlic paste",
+          "2 tbsp vegetable oil",
+          "1 tbsp garam masala",
+          "1/2 tbsp turmeric powder"
+        ],
+        "method_of_cooking": "1. Cut the chicken into bite-sized pieces and marinate in yogurt and ginger garlic paste for at least 30 minutes. \n2. Heat the oil in a pan and add the marinated chicken. Cook until lightly browned. \n3. Add garam masala, turmeric powder, and salt to taste. Cook for a few more minutes. \n4. Serve hot with naan or rice.",
+        "ratings": 4.8
+      },
+      {
+        "recipeId": "4829347491",
+        "recipeName": "Taco Salad",
+        "ingredients": [
+          "1 lb ground beef",
+          "1 can black beans",
+          "1 cup shredded cheddar cheese",
+          "1 cup salsa",
+          "1 head lettuce",
+          "1/2 cup sour cream"
+        ],
+        "method_of_cooking": "1. Brown the ground beef in a pan. \n2. Drain the excess fat and add the black beans. \n3. Simmer for a few minutes. \n4. In a large bowl, mix together the lettuce, cheese, and salsa. \n5. Add the beef and bean mixture to the bowl and mix well. \n6. Serve with a dollop of sour cream on top.",
+        "ratings": 4.2
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Rajesh Patel",
+    "picture_url": "https://example.com/rajesh-patel.jpg",
+    "short_bio": "Indian cuisine expert with a focus on regional dishes and spice blends.",
+    "years_of_experience": 20,
+    "likes": 700,
+    "num_recipes": 150,
+    "recipes": [
+      {
+        "recipeId": "3847583920",
+        "recipeName": "Grilled Cheese Sandwich",
+        "ingredients": [
+          "2 slices bread",
+          "2 slices cheddar cheese",
+          "1 tbsp butter"
+        ],
+        "method_of_cooking": "1. Heat a pan over medium heat. \n2. Butter one side of each slice of bread. \n3. Place one slice of bread in the pan, butter side down. \n4. Add the cheese slices on top of the bread. \n5. Place the other slice of bread on top, butter side up. \n6. Cook until the bottom slice of bread is golden brown. \n7. Flip the sandwich over and cook until the other side is golden brown. \n8. Serve hot.",
+        "ratings": 4.0
+      },
+      {
+        "recipeId": "2948374938",
+        "recipeName": "Pesto Pasta",
+        "ingredients": [
+          "1 lb pasta",
+          "2 cups fresh basil leaves",
+          "1/2 cup grated Parmesan cheese",
+          "1/2 cup olive oil",
+          "1/4 cup pine nuts",
+          "3 cloves garlic"
+        ],
+        "method_of_cooking": "1. Cook the pasta according to package instructions. \n2. While the pasta is cooking, make the pesto. \n3. In a food processor, combine the basil leaves, Parmesan cheese, olive oil, pine nuts, and garlic. \n4. Process until smooth. \n5. Drain the cooked pasta and return it to the pot. \n6. Add the pesto to the pot and mix well. \n7. Serve hot.",
+        "ratings": 4.4
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Maria Rodriguez",
+    "picture_url": "https://example.com/maria-rodriguez.jpg",
+    "short_bio": "Mexican chef specializing in traditional and contemporary dishes.",
+    "years_of_experience": 8,
+    "likes": 500,
+    "num_recipes": 75,
+    "recipes": [
+      "3409573498",
+      "5840395740",
+      "0234859048"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Chen Wu",
+    "picture_url": "https://example.com/chen-wu.jpg",
+    "short_bio": "Chinese cuisine expert with a focus on Szechuan and Hunan styles.",
+    "years_of_experience": 12,
+    "likes": 350,
+    "num_recipes": 120,
+    "recipes": [
+      "9283740293",
+      "3049857402",
+      "5937489023"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Mario Rossi",
+    "picture_url": "https://example.com/mario-rossi.jpg",
+    "short_bio": "Italian chef with a passion for fresh, local ingredients and simple, rustic dishes.",
+    "years_of_experience": 18,
+    "likes": 200,
+    "num_recipes": 200,
+    "recipes": [
+      "3402957402",
+      "0945837485",
+      "5983749583"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Jasmine Kim",
+    "picture_url": "https://example.com/jasmine-kim.jpg",
+    "short_bio": "Korean chef with a focus on traditional and fusion dishes, blending flavors from around the world.",
+    "years_of_experience": 6,
+    "likes": 20,
+    "num_recipes": 50,
+    "recipes": [
+      "3049582038",
+      "5903485720",
+      "2348590384"
+    ]
+  }
+]

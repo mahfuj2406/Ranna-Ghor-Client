@@ -30,7 +30,7 @@ const Home = () => {
                 </div>
             </div>
             <div className='min-w-screen mt-10'>
-                <div className='container border mx-auto quality-section'>
+                <div className='container mx-auto quality-section'>
                     <h1 className='md:text-5xl text-3xl text-center text white my-5'>Why We Are Best?</h1>
                     <div className='grid md:grid-cols-4 gap-4 bg-white'>
 
@@ -61,9 +61,8 @@ const Home = () => {
                     </div>
                 </div>
 
-            </div>
-            <h1>jThis is the home</h1>
-            <p>total data count : {chefs.length}</p>
+            {/* <p>total data count : {chefs.length}</p> */}
+            <div className="grid grid-cols-1 md:grid-cols-3  my-10 gap-4 container text-sm md:mx-auto">
             {
                 chefs.map(chef => <Chefs
                     key={chef.id}
@@ -71,6 +70,8 @@ const Home = () => {
                 ></Chefs>
                 )
             }
+            </div>
+            </div>
         </div>
     );
 };

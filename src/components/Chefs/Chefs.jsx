@@ -1,15 +1,22 @@
 import React from 'react';
+import { ArrowSmallRightIcon,HandThumbUpIcon } from '@heroicons/react/24/solid'
+import './Chefs.css'
 
 const Chefs = (props) => {
-    const {id,name,likes,num_recipes,years_of_experience} = props.Chefs;
+    const { id, name, likes, num_recipes, years_of_experience, picture_url } = props.Chefs;
     return (
-        <div className='border m-2 p-3 rounded bg-purple-500'>
-            <h2>Name: {name}</h2>
-            <p>Likes {likes}</p>
-            <p>Id: {likes}</p>
-            <p>Recipes count: {num_recipes}</p>
-            <p>Experience:  {years_of_experience}</p>
-        </div>
+            <div className="card card-side bg-base-100 shadow-xl ">
+                <img className='card-image' src={`${picture_url}`} alt="Movie" />
+                <div className="card-body">
+                    <h2 className="card-title">{name}</h2>
+                    <p><ArrowSmallRightIcon className="h-6 w-6 text-blue-500 inline" />{years_of_experience} year's of experience</p>
+                    <p><ArrowSmallRightIcon className="h-6 w-6 text-blue-500 inline" /> Total {years_of_experience} recipes</p>
+                    <div className="card-actions items-center justify-around">
+                        <span><HandThumbUpIcon className="h-6 w-6 text-blue-500 inline" />{likes}</span>
+                        <button className="btn btn-primary px-2 text-xs">View recipe</button>
+                    </div>
+                </div>
+            </div>
     );
 };
 
