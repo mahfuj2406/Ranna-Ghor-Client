@@ -2,9 +2,17 @@ import React, { useContext, useEffect, useState } from 'react';
 import './Home.css'
 import { AuthContext } from '../../providers/AuthProviders';
 import Chefs from '../Chefs/Chefs';
+import TopChef from '../TopChef/TopChef';
 
 const Home = () => {
+    const [topChef, setTopChef] = useState([]);
     const [chefs, setChefs] = useState([]);
+    useEffect(() =>{
+        fetch('http://localhost:5000/topChefs')
+        .then(res=> res.json())
+        .then(data => setTopChef(data))
+        .catch(error => console.log(error))
+    },[])
 
     useEffect(() => {
         fetch('http://localhost:5000/chefs')
@@ -12,6 +20,7 @@ const Home = () => {
             .then(data => setChefs(data))
             .catch(error => console.log(error))
     }, []);
+    console.log("Top chefs:", topChef);
 
 
     const { user } = useContext(AuthContext);
@@ -21,7 +30,7 @@ const Home = () => {
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className="hero-content text-center text-neutral-content">
                     <div className="max-w-md">
-                        <h1 className="mb-5 text-5xl font-bold text-white">Hello there</h1>
+                        <h1 className="mb-5 text-5xl font-bold text-white">Hello</h1>
                         <div className='p-4'>
                             <p className="mb-5  text-justify text-white">Welcome to my food recipe website! I'm a passionate cook who creates delicious recipes using fresh, high-quality ingredients. Whether you're a beginner or an experienced home cook, my easy-to-follow recipes will inspire you to get in the kitchen and start cooking. Thank you for visiting my website and enjoy the meals!</p>
                         </div>
@@ -71,6 +80,20 @@ const Home = () => {
                 )
             }
             </div>
+            </div>
+            
+            <div className='container w-full h-20 bg-purple-900 mx-auto'>
+                <h1 className='h-full w-full pt-4 md:pt-2 md:text-5xl text-2xl text-center font-black text-slate-900'>Top Chefs of the Year 2022</h1>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2  my-10 gap-4 container text-sm md:mx-auto">
+                {
+            topChef.map(c => 
+                <TopChef
+                    key={c.id}
+                    Chefs={c}
+                ></TopChef>
+                )
+                }
             </div>
         </div>
     );
