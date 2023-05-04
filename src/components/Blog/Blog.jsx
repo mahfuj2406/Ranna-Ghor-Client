@@ -1,9 +1,12 @@
 import React from 'react';
 import './Blog.css'
+import html2canvas from "html2canvas";
+import jsPDF from "jspdf";
 
 const Blog = () => {
     return (
         <div className='w-full p-5'>
+            <button className='btn btn-primary'>Download</button>
             <div className="max-w-screen rounded overflow-hidden shadow-lg my-10 border">
                 <div className="px-6 py-4">
                     <div className="font-bold text-xl mb-2 text-black" >differences between uncontrolled and controlled components</div>

@@ -1,8 +1,9 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../providers/AuthProviders';
 
 const Login = () => {
+    const [error, setError] = useState("");
 
     const location = useLocation();
     const from = location.state?.from?.pathname || '/';
@@ -27,6 +28,7 @@ const Login = () => {
             })
             .catch(error => {
                 console.log(error);
+                setError(error.message)
             })
 
     }
@@ -40,6 +42,7 @@ const Login = () => {
             })
             .catch(error => {
                 console.log(error);
+                setError(error.message)
             })
     }
 
@@ -52,6 +55,7 @@ const Login = () => {
             })
             .catch(error => {
                 console.log(error);
+                setError(error.message)
             })
     }
     return (
@@ -81,6 +85,7 @@ const Login = () => {
                             <button className="btn btn-primary">Login</button>
                         </div>
                     </form>
+                    <p className='text-red-400 p-2'>{error}</p>
                     <Link to='/register' className='link link-hover mx-auto mb-5'>New to RannaGhor?
                     </Link>
 

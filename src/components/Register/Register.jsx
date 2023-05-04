@@ -1,8 +1,9 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../providers/AuthProviders';
 
 const Register = () => {
+    const [error, setError] = useState("");
 
     const { user, createUser,profileUpdate } = useContext(AuthContext);
     console.log(createUser);
@@ -23,10 +24,12 @@ const Register = () => {
             profileUpdate(name,photo)
             .then(res=>console.log("Profile updated",res))
             .catch(error=> console.log(error.message))
+            setError(error.message);
             form.reset();
         })
         .catch(error=>{
             console.log(error);
+            setError(error.message);
         })
     }
     return (
@@ -67,6 +70,7 @@ const Register = () => {
                             <button className="btn btn-primary">Register</button>
                         </div>
                     </form>
+                    <p className='text-red-400'>{error} </p>
                     <Link to='/login' className='link link-hover mx-auto mb-5'>already have an account?
                     </Link>
                 </div>
