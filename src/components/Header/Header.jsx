@@ -53,7 +53,7 @@ const Header = () => {
 
                             {/* <!-- Profile and login log out section --> */}
                             {
-                                user && <div className="relative ml-3" title={user && `${user.email}`}>
+                                user && <div className="relative ml-3" title={user && `${user.displayName}`}>
                                     <div className="flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                                         {
                                             user.photoURL ?
