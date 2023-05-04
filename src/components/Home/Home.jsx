@@ -30,7 +30,7 @@ const Home = () => {
                 </div>
             </div>
             <div className='min-w-screen mt-10'>
-                <div className='container mx-auto quality-section'>
+                <div className='container mx-auto quality-section my-20'>
                     <h1 className='md:text-5xl text-3xl text-center text white my-5'>Why We Are Best?</h1>
                     <div className='grid md:grid-cols-4 gap-4 bg-white'>
 
