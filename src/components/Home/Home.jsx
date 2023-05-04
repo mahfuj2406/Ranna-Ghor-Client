@@ -8,14 +8,14 @@ const Home = () => {
     const [topChef, setTopChef] = useState([]);
     const [chefs, setChefs] = useState([]);
     useEffect(() =>{
-        fetch('http://localhost:5000/topChefs')
+        fetch('https://rannaghor-server-mahfuj2406.vercel.app/topChefs')
         .then(res=> res.json())
         .then(data => setTopChef(data))
         .catch(error => console.log(error))
     },[])
 
     useEffect(() => {
-        fetch('http://localhost:5000/chefs')
+        fetch('https://rannaghor-server-mahfuj2406.vercel.app/chefs')
             .then(res => res.json())
             .then(data => setChefs(data))
             .catch(error => console.log(error))
