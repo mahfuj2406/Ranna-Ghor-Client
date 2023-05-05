@@ -1,8 +1,10 @@
 import React, { useContext, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../providers/AuthProviders';
 
 const Register = () => {
+    const navigate = useNavigate();
+    const [reg, setReg] = useState(false);
     const [error, setError] = useState("");
 
     const { user, createUser,profileUpdate } = useContext(AuthContext);
@@ -22,9 +24,12 @@ const Register = () => {
             const loggedUser = result.user;
             console.log(loggedUser);
             profileUpdate(name,photo)
-            .then(res=>console.log("Profile updated",res))
+            .then(res=>{
+                    navigate('/login');
+            })
             .catch(error=> console.log(error.message))
             setError(error.message);
+
             form.reset();
         })
         .catch(error=>{
